@@ -1,0 +1,14 @@
+:root {
+  --color-primary: #6E6985;
+  --color-primary-light: #DADCE7;
+  --color-secondary: #7B9993;
+  --color-accent: #E16675;
+  --color-neutral: #faf3e8;
+
+  --font-primary: "Sarabun", sans-serif;
+  --font-secondary: "Krub", sans-serif;
+}
+
+html {
+  font-family: var(--font-primary);
+}
