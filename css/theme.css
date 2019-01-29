@@ -1,9 +1,10 @@
 :root {
-  --color-primary: #6E6985;
-  --color-primary-light: #DADCE7;
-  --color-secondary: #7B9993;
+  --color-primary: #7B9993;
+  --color-primary-light: #BAD3D2;
+  --color-secondary: #6E6985;
   --color-accent: #E16675;
-  --color-neutral: #faf3e8;
+  --color-neutral-beige: #F9F7F4;
+  --color-neutral-purple: #DADCE7;
 
   --font-primary: "Sarabun", sans-serif;
   --font-secondary: "Krub", sans-serif;
@@ -11,4 +12,19 @@
 
 html {
   font-family: var(--font-primary);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-secondary);
+  color: var(--color-secondary);
+}
+
+h4, h5, h6 {
+  font-family: var(--font-secondary);
+  color: var(--color-primary);
+}
+
+a {
+  font-family: var(--font-primary);
+  color: var(--color-secondary);
 }

@@ -2,4 +2,21 @@ permalink: pretty
 theme: jekyll_patternbot
 
 patternbot:
+  title: "Urban Nursery"
+  description: |
+    A local source for houseplants both exotic and familiar. Whether you have a greenthumb or are still learning, we have the plants for you!
   font_url: "https://fonts.googleapis.com/css?family=Krub:500,700|Sarabun:400,500,600"
+  colors:
+    background: "--color-neutral-beige"
+    accent: "--color-secondary"
+    patterns:
+      brand.logos: "--color-accent"
+  rationales:
+    typefaces.primary: |
+      Sarabun was chosen because it's a friendly, fun typeface that is easy to read on screens, but still has lots of personality.
+    typefaces.secondary: |
+      Krub is going to be used for h1s
+    colors.primary: |
+      The primary colours reflect the greens of common houseplants, and are clean and calming.
+    colors.secondary: |
+      The secondary colours offer a nice contrast to the main green colours, and were taken from the colour of succulents, reinforcing the plant theme.
