@@ -8,9 +8,9 @@ patternbot:
   font_url: "https://fonts.googleapis.com/css?family=Krub:500,700|Sarabun:400,500,600"
   colors:
     background: "--color-neutral-beige"
-    accent: "--color-secondary"
+    accent: "--color-accent-dark"
     patterns:
-      brand.logos: "--color-accent"
+      brand.logos: "--color-accent-dark"
   rationales:
     typefaces.primary: |
       Sarabun was chosen because it's a friendly, fun typeface that is easy to read on screens, but still has lots of personality.
