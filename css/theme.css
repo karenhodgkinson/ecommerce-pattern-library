@@ -1,58 +1,61 @@
 :root {
-  --color-primary: #ACD5D9;
-  --color-primary-light: #D5EDEA;
-  --color-secondary: #6E6985;
+  --color-light: #F9F5F4;
+  --color-primary-medium: #ACD5D9;
+  --color-primary: #D5EDEA;
+  --color-secondary-dark: #6E6985;
+  --color-secondary-light: #DADCE7;
   --color-accent-dark: #E16675;
   --color-accent-light: #ECCBC6;
-  --color-neutral-beige: #F4F0ED;
-  --color-neutral-purple: #DADCE7;
   --color-dark: #4D4F5C;
   --color-darkest: #26272D;
 
-  --font-primary: "Sarabun", sans-serif;
-  --font-secondary: "Krub", sans-serif;
-  --font-accent:
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Sarabun", sans-serif;
+  --font-accent: "Merienda", serif;
 }
 
-html {
-  font-family: var(--font-primary);
-  color: var(--color-darkest);
-}
-
-h1, h2, h3 {
+/* @utility Apply the secondary typeface */
+.font-secondary {
   font-family: var(--font-secondary);
-  color: var(--color-secondary);
 }
 
-h4, h5, h6 {
+/* @utility Apply the accent typeface */
+.font-accent {
+  font-family: var(--font-accent);
+}
+
+/* @utility Apply a contrasting background colour to an element */
+.section-contrast {
+  background-color: var(--color-primary);
+}
+
+h1, h2 {
+  font-family: var(--font-accent);
+  color: var(--color-secondary-dark);
+}
+
+h3, h4, h5, h6 {
   font-family: var(--font-secondary);
   color: var(--color-dark);
 }
 
-a:link {
-  font-family: var(--font-primary);
-  color: var(--color-neutral-beige);
-  color: var(--color-dark);
+a {
+  color: var(--color-secondary-dark);
 }
 
-/* visited link */
 a:visited {
-  color: var(--color-accent-light);
-  color: var(--color-secondary);
+  color: var(--color-primary-medium);
 }
 
-/* mouse over link */
 a:hover {
-  color: var(--color-primary-light);
-  color: var(--color-secondary);
+  color: var(--color-secondary-dark);
 }
 
-/* selected link */
 a:active {
-  color: var(--color-accent-light);
-  color: var(--color-secondary);
+  color: var(--color-accent-dark);
 }
 
-ul, ol, dl {
-  text-decoration: none;
+dl, ol, ul {
+  font-weight: 600;
+  color: var(--color-dark);
 }

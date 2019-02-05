@@ -1,21 +1,25 @@
 permalink: pretty
+
 theme: jekyll_patternbot
 
 patternbot:
   title: "Urban Nursery"
   description: |
     A local source for houseplants both exotic and familiar. Whether you have a greenthumb or are still learning, we have the plants for you!
-  font_url: "https://fonts.googleapis.com/css?family=Krub:500,700|Sarabun:400,500,600"
+  font_url: "https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600|Sarabun:400,500,600|Merienda:400,700"
   colors:
-    background: "--color-neutral-beige"
-    accent: "--color-accent-dark"
+    background: "--color-light"
+    accent: "--color-accent-light"
     patterns:
-      brand.logos: "--color-accent-dark"
+      brand.logos: "--color-light"
+      icons.icons.logo: "--color-accent-dark"
   rationales:
     typefaces.primary: |
-      Sarabun was chosen because it's a friendly, fun typeface that is easy to read on screens, but still has lots of personality.
+      Montserrat was chosen as the primary typeface because it's easy to read, but elegant and soothing.
     typefaces.secondary: |
-      Krub is going to be used for h1s
+      Sarabun was chosen as a secondary typeface because it's a friendly, fun typeface that is easy to read on screens, but still has lots of personality.
+    typefaces.tertiary: |
+      Merienda makes for a personality-filled accent typeface for use in select headings.
     colors.primary: |
       The primary colours reflect the greens of common houseplants, and are clean and calming.
     colors.secondary: |
