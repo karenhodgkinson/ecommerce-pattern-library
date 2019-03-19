@@ -1,0 +1,49 @@
+patterns:
+  image:
+    width: 400
+    fields:
+      - name: title
+        type: string
+        example: "Houseplants"
+      - name: details
+        type: string
+        example: "Browse our lovely houseplants for sale!"
+      - name: image
+        type: image
+        example: plant-trio.jpeg
+  plant-care:
+    width: 400
+    fields:
+      - name: title
+        type: string
+        example: "Succulents"
+      - name: details
+        type: string
+        example: "Succulents need to be taken care of in a way that may feel counter-intuitive."
+      - name: image
+        type: image
+        example: succulent.jpeg
+  product-info:
+    width: 400
+    fields:
+      - name: title
+        type: string
+        example: "Monstera"
+      - name: details
+        type: string
+        example: "Monsteras are a unique plant that will brighten up any room. This bold statement plant will become a conversation-started in no time! "
+      - name: image
+        type: image
+        example: monstera.jpg
+  product-small:
+    width: 200
+    fields:
+      - name: title
+        type: string
+        example: "Monstera"
+      - name: details
+        type: string
+        example: "Monsteras are a unique plant that will brighten up any room."
+      - name: image
+        type: image
+        example: monstera.jpg
