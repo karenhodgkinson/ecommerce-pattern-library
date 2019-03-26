@@ -2,17 +2,13 @@ patterns:
   image:
     width: 400
     description: |
-      The image card is used on the home and products page in order to display general categories that lead to more detailed pages.
+      The product card is used on the plants, pots, and hangers page in order to display specific products that can be added directly to the cart. Not to be used on the products page.
     fields:
-      - name: title
-        type: string
-        example: "Houseplants"
-      - name: details
-        type: string
-        example: "Browse our lovely houseplants for sale!"
-      - name: image
-        type: image
-        example: aloe-large.jpg
+      - name: data
+        type: object
+        data:
+          source: "site.products[0]"
+          type: Product
   product-card:
     width: 300
     description: |

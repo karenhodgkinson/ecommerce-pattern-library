@@ -11,6 +11,9 @@ patterns:
       - name: text
         type: string
         example: "Learn More"
+      - name: url
+        type: url
+        example: "/plants/"
 
   ghost:
     description: |

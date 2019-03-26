@@ -1,8 +1,7 @@
 <div class="card chop">
-  <img class="img-flex" src="/images/photos/{{include.image}}" alt="">
+  <img class="img-flex" src="{{include.data.image}}" alt="">
   <div class="island-1-2">
-    <h3>{{include.title}}</h3>
-    <p>{{include.details}}</p>
-    {% pattern buttons/basic text=include.button_text %}
+    <h3>{{include.data.title}}</h3>
+    {% pattern buttons/basic url=include.data.url %}
   </div>
 </div>
