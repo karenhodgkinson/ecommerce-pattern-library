@@ -1,12 +1,13 @@
 # Project Description
 
-vvvcv is an e-commerce website that sells merchandise of the character Egg.
+Urban Eden is an e-commerce website that sells merchandise of the character Egg.
+wireframe: https://docs.google.com/document/d/1_Wp5SfO2pzyMhdAVLJjJnRxxwCeyrUPx5hJgorXrAX0/edit?usp=sharing
 
 ---
 
 ## Content
 
-This website only sells stickers and pins.
+This website sells houseplants and accessories.
 
 ---
 
@@ -34,7 +35,7 @@ The pattern library is a Jekyll & Patternbot based application that requires a r
 
 ## Demos
 
-[Pattern Library for Egg](https://gallant-northcutt-074c57.netlify.com/pattern-library/#brand)
+[Pattern Library for Urban Eden](https://gallant-northcutt-074c57.netlify.com/pattern-library/#brand)
 
 ---
 
@@ -48,4 +49,4 @@ The pattern library is a Jekyll & Patternbot based application that requires a r
 
 ## License & copyright
 
-© cvcv, 2019
+© karenhodgkinson, 2019
