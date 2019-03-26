@@ -1,7 +1,33 @@
 ---
 layout: default
 ---
+<div class="grid">
 
-<h1>{{page.name}}</h1>
-<p>{{page.description}}</p>
-<img src="{{page.image}}" alt="">
+  <div class="unit xs-1 s-1 m-1-3 l-1-3">
+    <img class="img-flex" src="{{page.image}}" alt="">
+  </div>
+
+  <div class="unit xs-1 s-1 m-2-3 l-2-3">
+    <div class="section-medium pad-t pad-b">
+      <div class="gutter-2">
+        <h1 class="push-0">{{page.title}}</h1>
+        <ul class="list-group-inline push-0">
+          <li class="push-r-3-4">
+            <h3>{{page.type}}</h3>
+          </li>
+          <li>
+            <i class="icon i-48"><svg><use xlink:href="/images/icons.svg#one-drop"></use></svg></i>
+          </li>
+          <li>
+            <i class="icon i-128"><svg><use xlink:href="/images/icons.svg#three-sun"></use></svg></i>
+          </li>
+        </ul>
+        <p>{{page.description}}</p>
+        <div>
+          <h4>${{page.cost}}</h4>
+        </div>
+        {% pattern buttons/ghost %}
+      </div>
+    </div>
+  </div>
+</div>
