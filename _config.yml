@@ -3,24 +3,33 @@ permalink: pretty
 theme: jekyll_patternbot
 
 patternbot:
-  title: "Urban Nursery"
+  title: "Urban Eden"
   description: |
     A local source for houseplants both exotic and familiar. Whether you have a greenthumb or are still learning, we have the plants for you!
-  font_url: "https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600|Sarabun:400,500,600|Merienda:400,700"
+  font_url: "https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Delius|Roboto:300,400,500,700|Roboto+Condensed:300"
   colors:
-    background: "--color-light"
-    accent: "--color-accent-light"
+    background: "--color-primary-light"
+    accent: "--color-secondary-medium"
     patterns:
-      brand.logos: "--color-light"
-      icons.icons.heart-icon: "--color-accent-dark"
+      brand.logos: "--color-accent-medium"
   rationales:
     typefaces.primary: |
-      Montserrat was chosen as the primary typeface because it's easy to read, but elegant and soothing.
+      Roboto was chosen as the primary typeface because it's easy to read and adaptable for screens, but still elegant.
     typefaces.secondary: |
-      Sarabun was chosen as a secondary typeface because it's a friendly, fun typeface that is easy to read on screens, but still has lots of personality.
+      Roboto Condensed was chosen as a secondary typeface because it's a friendly, fun typeface that is easy to read on screens, but still has lots of personality.
     typefaces.tertiary: |
-      Merienda makes for a personality-filled accent typeface for use in select headings.
+      Amatic makes for a personality-filled accent typeface for use in select headings.
     colors.primary: |
       The primary colours reflect the greens of common houseplants, and are clean and calming.
     colors.secondary: |
       The secondary colours offer a nice contrast to the main green colours, and were taken from the colour of succulents, reinforcing the plant theme.
+
+collections:
+  products:
+    output: true
+
+defaults:
+  - scope:
+      path: _products
+    values:
+      layout: product

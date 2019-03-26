@@ -1,58 +1,67 @@
 :root {
-  --color-light: #F9F5F4;
-  --color-primary-medium: #ACD5D9;
-  --color-primary: #D5EDEA;
-  --color-secondary-dark: #6E6985;
-  --color-secondary-light: #DADCE7;
-  --color-accent-dark: #E16675;
+  --color-primary-light: #FFF;
+  --color-primary-medium: #DCD3DD;
+  --color-primary-dark: #7F7D93;
+  --color-secondary-light: #F3F3F3;
+  --color-secondary-medium: #90B6AE;
+  --color-secondary-dark: #4D4F5C;
   --color-accent-light: #ECCBC6;
-  --color-dark: #4D4F5C;
-  --color-darkest: #26272D;
+  --color-accent-medium: #DF94A3;
+  --color-darkest: #252525;
 
-  --font-primary: "Montserrat", sans-serif;
-  --font-secondary: "Sarabun", sans-serif;
-  --font-accent: "Merienda", serif;
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Roboto Condensed", sans-serif;
+  --font-accent: "Amatic SC", serif;
+
+  --border-radius: 4px;
 }
 
 /* @utility Apply the secondary typeface */
 .font-secondary {
   font-family: var(--font-secondary);
+  color: var(--color-secondary-dark);
 }
 
 /* @utility Apply the accent typeface */
 .font-accent {
   font-family: var(--font-accent);
+  color: var(--color-accent-medium);
 }
 
-/* @utility Apply a contrasting background colour to an element */
-.section-contrast {
-  background-color: var(--color-primary);
+/* @utility Apply a light contrasting background colour to an element */
+.section-medium {
+  background-color: var(--color-secondary-light);
+}
+
+/* @utility Apply a medium contrasting background colour to an element */
+.section-accent {
+  background-color: var(--color-secondary-medium);
 }
 
 h1, h2 {
-  font-family: var(--font-accent);
+  font-family: var(--font-secondary);
   color: var(--color-secondary-dark);
 }
 
 h3, h4, h5, h6 {
-  font-family: var(--font-secondary);
-  color: var(--color-dark);
+  font-family: var(--font-primary);
+  color: var(--color-darkest);
 }
 
 a {
-  color: var(--color-secondary-dark);
+  color: var(--color-darkest);
 }
 
 a:visited {
-  color: var(--color-primary-medium);
+  color: var(--color-primary-dark);
 }
 
 a:hover {
-  color: var(--color-secondary-dark);
+  color: var(--color-accent-medium);
 }
 
 a:active {
-  color: var(--color-accent-dark);
+  color: var(--color-accent-medium);
 }
 
 dl, ol, ul {
@@ -63,4 +72,28 @@ dl, ol, ul {
 li {
   color: var(--color-accent-dark);
   list-style: none;
+}
+
+mark {
+  background-color: var(--color-accent-dark);
+  color: var(--color-darkest);
+}
+
+cite {
+  font-family: var(--font-primary);
+  color: var(--color-darkest);
+}
+
+blockquote {
+  border-left: 10px solid var(--color-primary);
+}
+
+blockquote p {
+  font-family: var(--font-primary);
+  color: var(--color-darkest);
+}
+
+.banner {
+  max-height: 400px;
+  overflow: hidden;
 }

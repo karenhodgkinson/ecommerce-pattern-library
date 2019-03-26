@@ -1,6 +1,8 @@
 patterns:
   image:
     width: 400
+    description: |
+      The image card is used on the home and products page in order to display general categories that lead to more detailed pages.
     fields:
       - name: title
         type: string
@@ -10,40 +12,14 @@ patterns:
         example: "Browse our lovely houseplants for sale!"
       - name: image
         type: image
-        example: plant-trio.jpeg
-  plant-care:
-    width: 400
+        example: aloe-large.jpg
+  product-card:
+    width: 300
+    description: |
+      The product card is used on the plants, pots, and hangers page in order to display specific products that can be added directly to the cart. Not to be used on the products page.
     fields:
-      - name: title
-        type: string
-        example: "Succulents"
-      - name: details
-        type: string
-        example: "Succulents need to be taken care of in a way that may feel counter-intuitive."
-      - name: image
-        type: image
-        example: succulent.jpeg
-  product-info:
-    width: 400
-    fields:
-      - name: title
-        type: string
-        example: "Monstera"
-      - name: details
-        type: string
-        example: "Monsteras are a unique plant that will brighten up any room. This bold statement plant will become a conversation-started in no time! "
-      - name: image
-        type: image
-        example: monstera.jpg
-  product-small:
-    width: 200
-    fields:
-      - name: title
-        type: string
-        example: "Monstera"
-      - name: details
-        type: string
-        example: "Monsteras are a unique plant that will brighten up any room."
-      - name: image
-        type: image
-        example: monstera.jpg
+      - name: data
+        type: object
+        data:
+          source: "site.products[0]"
+          type: Product

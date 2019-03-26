@@ -1,25 +1,21 @@
 .btn {
-  background-color: var(--color-secondary-dark);
+  background-color: var(--color-primary-medium);
   border-color: var(--color-dark);
-  color: var(--color-light);
 }
 
 .btn:hover {
-  background-color: var(--color-secondary-dark);
+  background-color: var(--color-primary-medium);
   border-color: var(--color-dark);
-  color: var(--color-light);
 }
 
 .btn:active {
-  background-color: var(--color-secondary-dark);
+  background-color: var(--color-primary-medium);
   border-color: var(--color-dark);
-  color: var(--color-light);
 }
 
 .btn-ghost {
   background-color: transparent;
   border-color: var(--color-dark);
-  color: var(--color-dark);
 }
 
 .btn-ghost:hover {

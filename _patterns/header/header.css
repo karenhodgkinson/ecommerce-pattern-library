@@ -1,0 +1,12 @@
+.masthead {
+  max-height: 400px;
+  background-color: var(--color-primary-medium);
+}
+
+.nav {
+    background-color: var(--color-primary-dark);
+}
+
+.nav a {
+  color: var(--color-secondary-light);
+}

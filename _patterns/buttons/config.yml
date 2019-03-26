@@ -14,5 +14,5 @@ patterns:
 
   ghost:
     description: |
-      The Ghost buttons are to be used when an alternate button is needed.
+      The Ghost buttons are to be used in the occasion a floating button is needed on a banner or large image.
     width: 400
