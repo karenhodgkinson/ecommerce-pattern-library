@@ -1,0 +1,23 @@
+<div class="wrapper">
+<div class="banner embed embed-1by1">
+  <img class="img-flex embed-item" src="/images/{{include.image}}" alt="">
+  <div class="island w-1">
+    <h1 class="push-1-2">{{include.heading}}</h1>
+    <p>{{include.text}}</p>
+    {% if include.button_url %}
+      {% pattern buttons/basic url=include.button_url text=include.button_text %}
+    {% endif %}
+  </div>
+</div>
+
+<div class="banner embed embed-24by10">
+  <img class="img-flex embed-item" src="/images/{{include.image}}" alt="">
+  <div class="island w-1">
+    <h1 class="push-1-2">{{include.heading}}</h1>
+    <p>{{include.text}}</p>
+    {% if include.button_url %}
+      {% pattern buttons/basic url=include.button_url text=include.button_text %}
+    {% endif %}
+  </div>
+</div>
+</div>

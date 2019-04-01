@@ -1,0 +1,132 @@
+title: "Forms"
+description: |
+  Forms are to be used for adding items to cart, for inputting checkout information, and for account information.
+
+patterns:
+  text-line:
+    title: "Text"
+    description: |
+
+    fields:
+      - name: label
+        type: string
+        example: "Text"
+      - name: placeholder
+        type: string
+        example: "Enter text here."
+      - name: error
+        type: string
+        example: "This is a required field."
+  email:
+    title: "Email"
+    description: |
+      For email entries only, when applicable.
+    fields:
+      - name: placeholder
+        type: string
+        example: "email@email.com"
+      - name: error
+        type: string
+        example: "Please enter your email address."
+  password:
+    title: "Password"
+    description: |
+      For password entries only, when applicable.
+    fields:
+      - name: placeholder
+        type: string
+        example: "*****"
+      - name: error
+        type: string
+        example: "Passwords must contain at least 5 characters."
+  telephone:
+    title: "Phone Number"
+    description: |
+      This should be used when a phone number is required.
+    fields:
+      - name: placeholder
+        type: string
+        example: "123-123-1234"
+      - name: error
+        type: string
+        example: "Please enter your phone number in the correct format."
+  number:
+    title: "Quantity"
+    description: |
+      This should be used when the user needs to enter a quantity for an item to add to cart.
+    fields:
+      - name: label
+        type: string
+        example: "Quantity to add"
+      - name: error
+        type: string
+        example: "Please enter quantity."
+  search:
+    title: "Search"
+    description: |
+      This should be used for the search bar.
+    fields:
+      - name: placeholder
+        type: string
+        example: "Search all products"
+  dropdown:
+    title: "Dropdown"
+    description: |
+      This should be used for a dropdown menu when there is a range of predetermined options to choose from.
+    fields:
+      - name: label
+        type: string
+        example: "Select an option"
+      - name: option1
+        type: string
+        example: "Option 1"
+      - name: option2
+        type: string
+        example: "Option 2"
+      - name: option3
+        type: string
+        example: "Option 3"
+      - name: option4
+        type: string
+        example: "Option 4"
+      - name: option5
+        type: string
+        example: "Option 5"
+      - name: error
+        type: string
+        example: "Please select an option"
+  radio:
+    title: "Radio Button"
+    description: |
+      This should be used only in the checkout form.
+    fields:
+      - name: label
+        type: string
+        example: "Choose shipping option"
+  checkbox:
+    title: "Checkbox"
+    description: |
+      This should be used when selections are optional.
+    fields:
+      - name: label
+        type: string
+        example: "Save payment information"
+  text-para:
+    title: "Paragraph"
+    description: |
+      This is for longer amounts of text, such as paragraphs. Use for customer reviews, special requests, or comments.
+    fields:
+      - name: label
+        type: string
+        example: "Comments"
+      - name: placeholder
+        type: string
+        example: "Enter your comment, question, or request here."
+  submit:
+    title: "Submit"
+    description: |
+      This button is specifically for checkout.
+    fields:
+      - name: submit
+        type: string
+        example: "Submit!"
