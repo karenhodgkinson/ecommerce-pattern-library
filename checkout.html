@@ -2,39 +2,39 @@
 layout: default
 ---
 
-<div class="grid gutter pad-t max-length pad-b">
+<div class="grid max-length gutter-1-2 pad-t pad-b">
   <div class="unit xs-1 push-2">
     <h1 class="push-1-2">Shopping Cart</h1>
     <p>Review your order before placing the order.</p>
     <div class="grid">
       <div class="unit xs-1-3 m-1-4">
-        <h2 class="pad-t-1-2 push-1-2">Item</h2>
+        <h2 class="pad-t-1-2 gutter-1-8 push-1-2">Item</h2>
       </div>
       <div class="unit xs-1-3 m-1-4">
-        <h2 class="pad-t-1-2 push-1-2">Quantity</h2>
+        <h2 class="pad-t-1-2 gutter push-1-2">Quantity</h2>
       </div>
       <div class="unit xs-1-3 m-1-4">
-        <h2 class="pad-t-1-2 push-1-2">Price</h2>
+        <h2 class="pad-t-1-2 gutter push-1-2">Price</h2>
       </div>
     </div>
     <div class="grid">
       <div class="unit xs-1-3 m-1-4">
-        <p class="pad-t-1-2 push-1-2">{{site.products[0].title}}</p>
-        <p class="pad-t-1-2 push-1-2">{{site.products[1].title}}</p>
-        <p class="pad-t-1-2 push-1-2">{{site.products[2].title}}</p>
+        <p class="pad-t-1-2 gutter-1-8 push-1-2">{{site.products[0].title}}</p>
+        <p class="pad-t-1-2 gutter-1-8 push-1-2">{{site.products[1].title}}</p>
+        <p class="pad-t-1-2 gutter-1-8 push-1-2">{{site.products[2].title}}</p>
       </div>
       <div class="unit xs-1-3 m-1-4">
-        <p class="pad-t-1-2 push-1-2">1</p>
-        <p class="pad-t-1-2 push-1-2">1</p>
-        <p class="pad-t-1-2 push-1-2">1</p>
+        <p class="pad-t-1-2 gutter push-1-2">1</p>
+        <p class="pad-t-1-2 gutter push-1-2">1</p>
+        <p class="pad-t-1-2 gutter push-1-2">1</p>
       </div>
       <div class="unit xs-1-3 m-1-4">
-        <p class="pad-t-1-2 push-1-2">$ {{site.products[0].cost}}</p>
-        <p class="pad-t-1-2 push-1-2">$ {{site.products[1].cost}}</p>
-        <p class="pad-t-1-2 push-1-2">$ {{site.products[2].cost}}</p>
+        <p class="pad-t-1-2 gutter push-1-2">$ {{site.products[0].cost}}</p>
+        <p class="pad-t-1-2 gutter push-1-2">$ {{site.products[1].cost}}</p>
+        <p class="pad-t-1-2 gutter push-1-2">$ {{site.products[2].cost}}</p>
       </div>
       <div class="unit xs-1 m-1-4">
-        <div class="grid">
+        <div class="grid pad-t-1-2">
           <div class="unit xs-1-2">
             <h3 class="push-1-2 kilo">Total:</h3>
           </div>
@@ -91,5 +91,5 @@ layout: default
       </div>
     </div>
   </div>
-  {% pattern forms/submit submit="Place Order" %}
+  {% pattern forms/submit text="Place Order" %}
 </div>
