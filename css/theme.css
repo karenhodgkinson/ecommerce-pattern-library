@@ -34,6 +34,10 @@
   min-height: 100%;
 }
 
+.bg-medium {
+  background-color: var(--color-secondary-light);
+}
+
 /* @utility Apply a medium contrasting background colour to an element */
 .section-accent {
   background-color: var(--color-secondary-medium);
