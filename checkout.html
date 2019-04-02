@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="grid gutter pad-t">
-  <div class="unit xs-1">
+  <div class="unit xs-1 push-2">
     <h1 class="push-1-2">Shopping Cart</h1>
     <p>Review your order before placing the order.</p>
     <div class="grid">
@@ -62,5 +62,18 @@ layout: default
         </div>
       </div>
     </div>
+  </div>
+  <div class="unit xs-1">
+    <h1 class="push-1-2">Contact & Shipping Information</h1>
+    {% pattern forms/text-line label="Full Name" placeholder="Enter your full name here" error="This is a required field" %}
+    <div class="grid">
+      <div class="unit xs-1 m-1-2">
+        {% pattern forms/email placeholder="Enter your email here" error="Please enter your email address" %}
+      </div>
+      <div class="unit xs-1 m-1-2">
+        {% pattern forms/telephone placeholder="Enter your phone number here" error="Please enter your phone number in the correct format" %}
+      </div>
+    </div>
+    {% pattern forms/text-line label="Shipping Address" placeholder="Enter your address here" error="This is a required field" %}
   </div>
 </div>
