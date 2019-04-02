@@ -1,0 +1,27 @@
+title: "Banners"
+description: |
+  Banners should be used for main pages.
+
+patterns:
+  banner:
+    title: ""
+    description: |
+
+    fields:
+      - name: heading
+        type: string
+        example: ""
+      - name: text
+        type: string
+        example: ""
+      - name: image
+        type: string
+        example: ""
+      - name: button_text
+        type: string
+        example: ""
+        required: false
+      - name: button_url
+        type: url
+        example: "//"
+        required: false

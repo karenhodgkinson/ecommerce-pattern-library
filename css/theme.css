@@ -31,15 +31,17 @@
 /* @utility Apply a light contrasting background colour to an element */
 .section-medium {
   background-color: var(--color-secondary-light);
+  min-height: 100%;
 }
 
 /* @utility Apply a medium contrasting background colour to an element */
 .section-accent {
   background-color: var(--color-secondary-medium);
+  min-height: 100%;
 }
 
 h1, h2 {
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   color: var(--color-secondary-dark);
 }
 
@@ -96,4 +98,8 @@ blockquote p {
 .banner {
   max-height: 400px;
   overflow: hidden;
+}
+
+p {
+font-family: var(--font-secondary);
 }
