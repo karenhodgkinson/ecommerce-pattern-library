@@ -39,6 +39,10 @@
 }
 
 /* @utility Apply a medium contrasting background colour to an element */
+html {
+font-family: var(--font-primary);
+}
+
 .section-accent {
   background-color: var(--color-secondary-medium);
   min-height: 100%;
