@@ -48,6 +48,10 @@ font-family: var(--font-primary);
   min-height: 100%;
 }
 
+.bg-accent {
+  background-color: var(--color-primary-medium);
+}
+
 h1, h2 {
   font-family: var(--font-primary);
   color: var(--color-secondary-dark);
