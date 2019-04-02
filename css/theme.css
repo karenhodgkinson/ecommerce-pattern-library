@@ -41,7 +41,7 @@
 }
 
 h1, h2 {
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   color: var(--color-secondary-dark);
 }
 
@@ -98,4 +98,8 @@ blockquote p {
 .banner {
   max-height: 400px;
   overflow: hidden;
+}
+
+p {
+font-family: var(--font-secondary);
 }
