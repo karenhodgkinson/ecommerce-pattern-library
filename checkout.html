@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<div class="grid max-length gutter-1-2 pad-t pad-b">
+<div class="grid wrapper gutter-1-2 pad-t pad-b">
   <div class="unit xs-1 push-2">
     <h1 class="push-1-2">Shopping Cart</h1>
     <p>Review your order before placing the order.</p>
-    <div class="grid">
+    <div class="grid bg-accent">
       <div class="unit xs-1-3 m-1-4">
-        <h2 class="pad-t-1-2 gutter-1-8 push-1-2">Item</h2>
+        <h2 class="pad-t-1-2 gutter push-1-2">Item</h2>
       </div>
       <div class="unit xs-1-3 m-1-4">
         <h2 class="pad-t-1-2 gutter push-1-2">Quantity</h2>
@@ -19,9 +19,9 @@ layout: default
     </div>
     <div class="grid">
       <div class="unit xs-1-3 m-1-4">
-        <p class="pad-t-1-2 gutter-1-8 push-1-2">{{site.products[0].title}}</p>
-        <p class="pad-t-1-2 gutter-1-8 push-1-2">{{site.products[1].title}}</p>
-        <p class="pad-t-1-2 gutter-1-8 push-1-2">{{site.products[2].title}}</p>
+        <p class="pad-t-1-2 gutter push-1-2">{{site.products[0].title}}</p>
+        <p class="pad-t-1-2 gutter push-1-2">{{site.products[1].title}}</p>
+        <p class="pad-t-1-2 gutter push-1-2">{{site.products[2].title}}</p>
       </div>
       <div class="unit xs-1-3 m-1-4">
         <p class="pad-t-1-2 gutter push-1-2">1</p>
@@ -33,7 +33,7 @@ layout: default
         <p class="pad-t-1-2 gutter push-1-2">$ {{site.products[1].cost}}</p>
         <p class="pad-t-1-2 gutter push-1-2">$ {{site.products[2].cost}}</p>
       </div>
-      <div class="unit xs-1 m-1-4">
+      <div class="unit xs-1 m-1-4 gutter-1-2 bg-accent">
         <div class="grid pad-t-1-2">
           <div class="unit xs-1-2">
             <h3 class="push-1-2 kilo">Total:</h3>
@@ -65,10 +65,12 @@ layout: default
   </div>
   <div class="unit xs-1">
     <h1 class="push-1-2">Contact & Shipping Information</h1>
-    <div class="max-length gutter-1-8">
-      {% pattern forms/text-line label="Full Name" placeholder="Enter your full name here" error="This is a required field" %}
+    <div class="grid">
+      <div class="unit xs-1 m-1-2 gutter-1-8">
+        {% pattern forms/text-line label="Full Name" placeholder="Enter your full name here" error="This is a required field" %}
+      </div>
     </div>
-    <div class="grid max-length">
+    <div class="grid wrapper">
       <div class="unit xs-1 m-1-2 gutter-1-8">
         {% pattern forms/email placeholder="Enter your email here" error="Please enter your email address" %}
       </div>
@@ -76,10 +78,12 @@ layout: default
         {% pattern forms/telephone placeholder="(123) 456-7890" error="Please enter your phone number in the correct format" %}
       </div>
     </div>
-    <div class="max-length gutter-1-8">
-      {% pattern forms/text-line label="Shipping Address" placeholder="Enter your address here" error="This is a required field" %}
+    <div class="grid">
+      <div class="unit xs-1 m-1-2 gutter-1-8">
+        {% pattern forms/text-line label="Shipping Address" placeholder="Enter your address here" error="This is a required field" %}
+      </div>
     </div>
-    <div class="grid max-length">
+    <div class="grid wrapper">
       <div class="unit xs-1 m-1-3 gutter-1-8">
         {% pattern forms/text-line label="City" error="This is a required field." %}
       </div>
@@ -90,6 +94,8 @@ layout: default
         {% pattern forms/text-line label="Country" error="This is a required field." %}
       </div>
     </div>
+    <div class="unit xs-1 text-right">
+      {% pattern forms/submit text="Place Order" %}
+    </div>
   </div>
-  {% pattern forms/submit text="Place Order" %}
 </div>
