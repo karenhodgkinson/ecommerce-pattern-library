@@ -80,12 +80,16 @@ a:active {
 
 dl, ol, ul {
   font-weight: 600;
-  color: var(--color-dark);
+  color: var(--color-darkest);
 }
 
 li {
-  color: var(--color-accent-dark);
+  color: var(--color-darkest);
   list-style: none;
+}
+
+li p {
+  font-weight: 400;
 }
 
 mark {
