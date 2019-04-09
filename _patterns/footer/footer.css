@@ -1,0 +1,9 @@
+.footer {
+  background-color: var(--color-primary-dark);
+}
+
+.footer a {
+  color: var(--color-secondary-light);
+  font-family: var(--font-primary);
+  text-decoration: none;
+}
