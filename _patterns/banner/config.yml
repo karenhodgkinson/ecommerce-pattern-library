@@ -4,24 +4,68 @@ description: |
 
 patterns:
   banner:
-    title: ""
+    title: "Basic Banner"
     description: |
+      A simple decorative banner to be used when it is not ideal to direct the user to a different page. Best used on the About page.
 
     fields:
       - name: heading
         type: string
-        example: ""
-      - name: text
-        type: string
-        example: ""
+        example: "About Us"
       - name: image
         type: string
-        example: ""
-      - name: button_text
+        example: "/images/photos/banner-about.jpg"
+
+  call-to-action:
+    title: "Call-to-action"
+    description: |
+      This banner must link to another page. It is to be used on the home page, on promotional pages, etc. Not to be used on the checkout page or the About page.
+
+    fields:
+      - name: heading
         type: string
-        example: ""
-        required: false
-      - name: button_url
+        example: "New Houseplants arriving daily!"
+      - name: image
+        type: string
+        example: "/images/photos/banner-about.jpg"
+      - name: button-text
+        type: string
+        example: "Browse Plants"
+      - name: button-url
         type: url
-        example: "//"
-        required: false
+        example: "/plants/"
+
+  alert:
+    title: "Alert"
+    description: |
+      This is a text-only banner to be used for alerts and important information.
+
+    fields:
+      - name: heading
+        type: string
+        example: "Save more when you buy more promotion on now!"
+      - name: text
+        type: string
+        example: "Bulk pricing on select varieties of houseplants until May 1st, 2019"
+
+  banner-info:
+    title: "Informational Banner"
+    description: |
+      This banner is used when a paragraph of text is needed on a banner. Best used for promotions or on the home page.
+
+    fields:
+      - name: heading
+        type: string
+        example: "Discounts grow along with your indoor garden!"
+      - name: image
+        type: string
+        example: "/images/photos/banner-about.jpg"
+      - name: text
+        type: string
+        example: "The savings increase as you add more plants to your collection. Buy 2 plants and save $1 on each plant. Buy 3 plants and save $2! See table below for more information."
+      - name: button-text
+        type: string
+        example: "Browse Plants"
+      - name: button-url
+        type: url
+        example: "/plants/"

@@ -1,0 +1,67 @@
+---
+layout: default
+---
+{% pattern banner/alert heading="Save-more-when-you-buy-more promotion on now!" text="Bulk pricing on select varieties of houseplants until May 1st, 2019" %}
+{% pattern banner/banner-info heading="Discounts grow along with your indoor garden!" image="/images/photos/banner-about.jpg" text="The savings increase as you add more plants to your collection. See table below for more information." button-text="Browse Plants" button-url="/plants/" %}
+<div class="gutter">
+
+  <div class="grid wrapper">
+    {% for product in site.products limit:2 %}
+    <div class="unit xs-1 s-1 m-1-2 l-1-2 island">
+      {% pattern cards/image data=product %}
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="island wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Quantity</th>
+          <th scope="col">Price per Unit</th>
+          <th scope="col">Savings</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>$10</td>
+          <td>regular price</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>$9</td>
+          <td>$1 off per unit</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>$8</td>
+          <td>$2 off per unit</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>$7</td>
+          <td>$3 off per unit</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>$6</td>
+          <td>$4 off per unit</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>$5</td>
+          <td>$5 off per unit</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>$4</td>
+          <td>$6 off per unit</td>
+        </tr>
+      </tbody>
+      <tfoot>
+      </tfoot>
+    </table>
+  </div>
+</div>
+{% pattern footer/email-signup %}

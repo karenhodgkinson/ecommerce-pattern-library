@@ -1,25 +1,37 @@
 .btn {
   background-color: var(--color-primary-medium);
-  border-color: var(--color-dark);
+  border-color: var(--color-secondary-dark);
 }
 
 .btn:hover {
   background-color: var(--color-primary-medium);
-  border-color: var(--color-dark);
+  border-color: var(--color-secondary-dark);
 }
 
 .btn:active {
   background-color: var(--color-primary-medium);
-  border-color: var(--color-dark);
+  border-color: var(--color-secondary-dark);
 }
 
 .btn-ghost {
   background-color: transparent;
-  border-color: var(--color-dark);
+  border-color: var(--color-secondary-dark);
 }
 
 .btn-ghost:hover {
   background-color: var(--color-accent-light);
-  border-color: var(--color-dark);
-  color: var(--color-secondary-darkest);
+  border-color: var(--color-secondary-dark);
+  color: var(--color-secondary-dark);
+}
+
+.btn-slim {
+  padding: 0.2em;
+  background-color: var(--color-secondary-medium);
+  color: var(--color-darkest);
+}
+
+.btn-slim:hover {
+  background-color: var(--color-secondary-light);
+  border-color: var(--color-darkest);
+  color: var(--color-secondary-dark);
 }

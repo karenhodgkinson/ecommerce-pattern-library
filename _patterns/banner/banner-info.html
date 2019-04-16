@@ -1,6 +1,8 @@
 <div class="banner embed embed-24by10">
   <img class="img-flex embed-item" src="{{include.image}}" alt="">
-  <div class="island w-1">
+  <div class="island w-1 info">
     <h1 class="push-1-2">{{include.heading}}</h1>
+    <p class="push-1-2">{{include.text}}</p>
+    {% pattern buttons/ghost text="include.text" url="/plants/" %}
   </div>
 </div>

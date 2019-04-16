@@ -6,7 +6,7 @@ patterns:
   text-line:
     title: "Text"
     description: |
-
+      Text-line fields are to be used for short text entries such as a username, address, or short sentance.
     fields:
       - name: label
         type: string
@@ -20,7 +20,7 @@ patterns:
   email:
     title: "Email"
     description: |
-      For email entries only, when applicable.
+      This is to be used for email addresses only, when applicable.
     fields:
       - name: placeholder
         type: string
@@ -64,7 +64,7 @@ patterns:
   search:
     title: "Search"
     description: |
-      This should be used for the search bar.
+      This should be used primarily for the search bar, but can be adapted for alternate uses.
     fields:
       - name: placeholder
         type: string
@@ -127,6 +127,6 @@ patterns:
     description: |
       This button is specifically for checkout.
     fields:
-      - name: submit
+      - name: text
         type: string
         example: "Submit!"

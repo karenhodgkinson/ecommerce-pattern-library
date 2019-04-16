@@ -1,0 +1,18 @@
+.banner {
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  bottom: 20%;
+  background-color: var(--color-secondary-light);
+  color: var(--color-darkest);
+}
+
+.alert {
+  background-color: var(--color-secondary-medium);
+}
+
+.alert h1 {
+  color: var(--color-darkest);
+}

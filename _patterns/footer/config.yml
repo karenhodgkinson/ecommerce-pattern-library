@@ -1,3 +1,14 @@
-title: "Footer"
+title: "Footers"
 description: |
-  The footer contains some privacy information and navigation. It should be used for most pages where the user should be able to navigate easily.
+  Footers are to be used on every page.
+
+patterns:
+  footer:
+    title: "Basic Footer"
+    description: |
+      The footer contains some privacy information and navigation. It should be used for most pages where the user should be able to navigate easily.
+
+  footer:
+    title: "Email Signup"
+    description: |
+      The email signup area contains a text field to submit an email address. It should always be used above the basic footer and should not be used on the checkout page.

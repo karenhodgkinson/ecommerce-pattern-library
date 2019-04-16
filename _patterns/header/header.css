@@ -1,6 +1,9 @@
 .masthead {
   max-height: 400px;
-  background-color: var(--color-primary-medium);
+  background-image: url(/images/photos/soft-card.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .nav {

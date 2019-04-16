@@ -6,7 +6,7 @@ patterns:
   basic:
     title: "Most Basic Button"
     description: |
-      Basic button to be used for most button needs.
+      Basic button to be used for most button needs. When in doubt, use a basic button!
     fields:
       - name: text
         type: string
@@ -16,6 +16,25 @@ patterns:
         example: "/plants/"
 
   ghost:
+    title: "Transparent Button"
     description: |
       The Ghost buttons are to be used in the occasion a floating button is needed on a banner or large image.
-    width: 400
+    fields:
+      - name: text
+        type: string
+        example: "Learn More"
+      - name: url
+        type: url
+        example: "/plants/"
+
+  slim:
+    title: "Slim Button"
+    description: |
+      Slim buttons are to be used next to text-line form fields such as for search fields or email signup fields.
+    fields:
+        - name: text
+          type: string
+          example: "Submit"
+        - name: url
+          type: url
+          example: "/products/"
