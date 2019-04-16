@@ -34,6 +34,7 @@
   min-height: 100%;
 }
 
+/* @utility Apply a light contrasting background colour to an element */
 .bg-medium {
   background-color: var(--color-secondary-light);
 }
@@ -43,11 +44,13 @@ html {
 font-family: var(--font-primary);
 }
 
+/* @utility Apply a light contrasting background colour to an element */
 .section-accent {
   background-color: var(--color-secondary-medium);
   min-height: 100%;
 }
 
+/* @utility Apply a light contrasting background colour to an element */
 .bg-accent {
   background-color: var(--color-primary-medium);
 }
